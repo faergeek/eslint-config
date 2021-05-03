@@ -1,0 +1,23 @@
+{
+  "name": "@faergeek/eslint-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:faergeek/eslint-config.git",
+  "author": "Sergey Slipchenko <me@faergeek.online>",
+  "license": "MIT",
+  "scripts": {
+    "prettier": "prettier --write .",
+    "prettier:check": "prettier --list-different ."
+  },
+  "peerDependencies": {
+    "eslint": ">= 7",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.3.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}
