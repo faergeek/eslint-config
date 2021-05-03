@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/faergeek/eslint-config/compare/v1.0.0...v1.1.0) (2021-05-03)
+
+
+### Features
+
+* release again ([ae7bd24](https://github.com/faergeek/eslint-config/commit/ae7bd24a8552630d64fbc2ed9e8a80e8c7d98099))
+
 # 1.0.0 (2021-05-03)
 
 
