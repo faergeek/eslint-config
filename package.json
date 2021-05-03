@@ -6,8 +6,12 @@
   "author": "Sergey Slipchenko <me@faergeek.online>",
   "license": "MIT",
   "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint --max-warnings 0 .",
+    "lint:check-prettier-conflicts": "eslint-config-prettier test.js",
     "prettier": "prettier --write .",
-    "prettier:check": "prettier --list-different ."
+    "prettier:check": "prettier --list-different .",
+    "release": "semantic-release"
   },
   "peerDependencies": {
     "eslint": ">= 7",
@@ -15,9 +19,16 @@
     "eslint-plugin-react-hooks": "^4.2.0"
   },
   "dependencies": {
-    "eslint-config-prettier": "^8.3.0"
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "semantic-release": "^17.4.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "eslint": "^7.25.0",
+    "husky": "^5.0.0",
     "prettier": "^2.2.1"
   }
 }
