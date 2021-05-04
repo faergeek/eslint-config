@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/faergeek/eslint-config/compare/v1.1.0...v1.2.0) (2021-05-04)
+
+
+### Features
+
+* add simple-import-sort plugin ([d891ee2](https://github.com/faergeek/eslint-config/commit/d891ee21bd11966badb530a69c7f0960b0212222))
+
 # [1.1.0](https://github.com/faergeek/eslint-config/compare/v1.0.0...v1.1.0) (2021-05-03)
 
 
