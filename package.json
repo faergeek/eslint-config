@@ -11,8 +11,7 @@
     "lint:check-prettier-conflicts": "eslint-config-prettier test.js",
     "prettier": "prettier --write .",
     "prettier:check": "prettier --list-different .",
-    "release": "semantic-release",
-    "semantic-release": "semantic-release"
+    "release": "semantic-release"
   },
   "peerDependencies": {
     "eslint": ">= 7",
