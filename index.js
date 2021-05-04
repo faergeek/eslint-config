@@ -1,6 +1,7 @@
 module.exports = {
   reportUnusedDisableDirectives: true,
   extends: ['eslint:recommended', 'prettier'],
+  plugins: ['simple-import-sort'],
   parserOptions: { sourceType: 'module' },
   env: { es2021: true },
   rules: {
@@ -21,5 +22,7 @@ module.exports = {
     radix: 'warn',
     'spaced-comment': ['warn', 'always', { block: { balanced: true } }],
     strict: ['warn', 'never'],
+    'simple-import-sort/imports': 'warn',
+    'simple-import-sort/exports': 'warn',
   },
 };
