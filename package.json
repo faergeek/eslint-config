@@ -19,6 +19,11 @@
       "./node"
     ]
   },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
   "release": {
     "plugins": [
       "@semantic-release/commit-analyzer",
