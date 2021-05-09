@@ -13,6 +13,7 @@
     "prettier:check": "prettier --list-different .",
     "release": "semantic-release"
   },
+  "eslintConfig": { "extends": ["."], "env": { "node": true } },
   "peerDependencies": {
     "eslint": ">= 7",
     "eslint-plugin-react": "^7.23.2",
