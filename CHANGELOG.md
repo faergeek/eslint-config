@@ -1,3 +1,11 @@
+# [1.4.0](https://github.com/faergeek/eslint-config/compare/v1.3.0...v1.4.0) (2021-05-09)
+
+
+### Features
+
+* add jest preset ([489aaa2](https://github.com/faergeek/eslint-config/commit/489aaa20ef2527c0529cb3d2eaff2e886bb2c72b))
+* add typescript preset ([13e3726](https://github.com/faergeek/eslint-config/commit/13e3726bc9d0d1cfbf4b195cd4b48d7b22714cfe))
+
 # [1.3.0](https://github.com/faergeek/eslint-config/compare/v1.2.0...v1.3.0) (2021-05-09)
 
 
