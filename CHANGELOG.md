@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/faergeek/eslint-config/compare/v1.2.0...v1.3.0) (2021-05-09)
+
+
+### Features
+
+* add node preset ([27aaf51](https://github.com/faergeek/eslint-config/commit/27aaf5137928f2612ca378a41e15543cbb41b658))
+
 # [1.2.0](https://github.com/faergeek/eslint-config/compare/v1.1.0...v1.2.0) (2021-05-04)
 
 
