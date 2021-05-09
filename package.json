@@ -13,6 +13,10 @@
     "prettier:check": "prettier --list-different .",
     "release": "semantic-release"
   },
+  "prettier": {
+    "arrowParens": "avoid",
+    "singleQuote": true
+  },
   "eslintConfig": {
     "extends": [
       ".",
