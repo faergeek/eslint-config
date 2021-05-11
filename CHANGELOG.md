@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/faergeek/eslint-config/compare/v1.4.0...v1.4.1) (2021-05-11)
+
+
+### Bug Fixes
+
+* add files field to package.json ([0f1e887](https://github.com/faergeek/eslint-config/commit/0f1e8873e550e50017403a4591aa2a81f44a9451))
+
 # [1.4.0](https://github.com/faergeek/eslint-config/compare/v1.3.0...v1.4.0) (2021-05-09)
 
 
