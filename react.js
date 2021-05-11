@@ -1,9 +1,5 @@
 module.exports = {
-  extends: [
-    'plugin:compat/recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
-  ],
+  extends: ['plugin:react/recommended', 'plugin:react-hooks/recommended'],
   env: { 'shared-node-browser': true },
   settings: { react: { version: 'detect' } },
   rules: {
