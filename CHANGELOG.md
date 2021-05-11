@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/faergeek/eslint-config/compare/v1.4.1...v1.4.2) (2021-05-11)
+
+
+### Bug Fixes
+
+* remove compat plugin usage from react preset ([5b8e33f](https://github.com/faergeek/eslint-config/commit/5b8e33f574b99223bba2ffa4cbdf9b7914bb0ce6))
+
 ## [1.4.1](https://github.com/faergeek/eslint-config/compare/v1.4.0...v1.4.1) (2021-05-11)
 
 
