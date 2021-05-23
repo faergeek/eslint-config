@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/faergeek/eslint-config/compare/v1.4.2...v1.4.3) (2021-05-23)
+
+
+### Bug Fixes
+
+* **deps:** move plugins to dependencies ([3a4780e](https://github.com/faergeek/eslint-config/commit/3a4780ee617715ff5b307b85704999e4d8cdf582))
+
 ## [1.4.2](https://github.com/faergeek/eslint-config/compare/v1.4.1...v1.4.2) (2021-05-11)
 
 
