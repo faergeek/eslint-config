@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/faergeek/eslint-config/compare/v1.4.3...v1.5.0) (2021-05-23)
+
+
+### Features
+
+* add preact config ([a76f615](https://github.com/faergeek/eslint-config/commit/a76f61526765a80de7b04336536ee2890e418f48))
+
 ## [1.4.3](https://github.com/faergeek/eslint-config/compare/v1.4.2...v1.4.3) (2021-05-23)
 
 
