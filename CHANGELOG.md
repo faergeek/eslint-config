@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/faergeek/eslint-config/compare/v1.5.0...v1.5.1) (2021-05-23)
+
+
+### Bug Fixes
+
+* don't use eslint-config-preact ([53da723](https://github.com/faergeek/eslint-config/commit/53da723b5298821244a3b6650dc499f3f7476152))
+
 # [1.5.0](https://github.com/faergeek/eslint-config/compare/v1.4.3...v1.5.0) (2021-05-23)
 
 
