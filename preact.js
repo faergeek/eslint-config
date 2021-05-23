@@ -1,3 +1,9 @@
 module.exports = {
-  extends: ['preact'],
+  extends: ['./react'],
+  settings: {
+    react: {
+      pragma: 'h',
+      version: '17',
+    },
+  },
 };
