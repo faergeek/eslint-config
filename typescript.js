@@ -4,6 +4,7 @@ module.exports = {
     project: './tsconfig.json',
   },
   rules: {
+    '@typescript-eslint/array-type': ['warn', { default: 'array-simple' }],
     '@typescript-eslint/no-unused-vars': 'off',
   },
 };
