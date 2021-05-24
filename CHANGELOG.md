@@ -1,3 +1,21 @@
+# [2.0.0](https://github.com/faergeek/eslint-config/compare/v1.5.4...v2.0.0) (2021-05-24)
+
+
+### Bug Fixes
+
+* disable @typescript-eslint/explicit-module-boundary-types ([c48d4e9](https://github.com/faergeek/eslint-config/commit/c48d4e934acd82bd428ccddae4fcc1c838949221))
+* disable @typescript-eslint/no-unused-vars ([2ffbe9e](https://github.com/faergeek/eslint-config/commit/2ffbe9e0d58d84f886307d8d58d7d622e1677233))
+
+
+### Features
+
+* enable jest config by default ([7e55987](https://github.com/faergeek/eslint-config/commit/7e55987a46c62c0967e064531f9658cd2a4f84ce))
+
+
+### BREAKING CHANGES
+
+* there's no separate jest config anymore
+
 ## [1.5.4](https://github.com/faergeek/eslint-config/compare/v1.5.3...v1.5.4) (2021-05-24)
 
 
