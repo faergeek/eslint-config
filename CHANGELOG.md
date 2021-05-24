@@ -1,3 +1,13 @@
+## [1.5.3](https://github.com/faergeek/eslint-config/compare/v1.5.2...v1.5.3) (2021-05-24)
+
+
+### Bug Fixes
+
+* enable @typescript-eslint/array-type rule ([9bb4255](https://github.com/faergeek/eslint-config/commit/9bb425528f873b2afb5e5c1ef8a6c39fe54fb5d3))
+* enable @typescript-eslint/no-shadow rule ([122dfb1](https://github.com/faergeek/eslint-config/commit/122dfb13cb1faa6abc9c641f99ebe7663b463412))
+* relax @typescript-eslint/ban-ts-comment rule ([663772a](https://github.com/faergeek/eslint-config/commit/663772a08ab64c4391916d703a74f098a9ecac56))
+* remove @typescript-eslint/no-unused-vars rule ([612d2ff](https://github.com/faergeek/eslint-config/commit/612d2ff312a803048a9231cba4ad3fc723339605))
+
 ## [1.5.2](https://github.com/faergeek/eslint-config/compare/v1.5.1...v1.5.2) (2021-05-23)
 
 
