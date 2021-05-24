@@ -12,6 +12,10 @@ module.exports = {
       { checkFragmentShorthand: true, checkKeyMustBeforeSpread: true },
     ],
     'react/no-danger': 'warn',
+    'react/jsx-no-target-blank': [
+      'error',
+      { allowReferrer: true, warnOnSpreadAttributes: true },
+    ],
     'react/no-unused-prop-types': 'warn',
     'react/prop-types': 'off',
     'react/require-render-return': 'off',
