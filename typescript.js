@@ -10,6 +10,5 @@ module.exports = {
       { 'ts-ignore': 'allow-with-description' },
     ],
     '@typescript-eslint/no-shadow': 'warn',
-    '@typescript-eslint/no-unused-vars': 'off',
   },
 };
