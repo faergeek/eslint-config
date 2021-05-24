@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/faergeek/eslint-config/compare/v1.5.3...v1.5.4) (2021-05-24)
+
+
+### Bug Fixes
+
+* tweak react/jsx-no-target-blank rule ([5a18f3c](https://github.com/faergeek/eslint-config/commit/5a18f3cd81e2ee648c3b9efdc6cddea4d782875b))
+
 ## [1.5.3](https://github.com/faergeek/eslint-config/compare/v1.5.2...v1.5.3) (2021-05-24)
 
 
