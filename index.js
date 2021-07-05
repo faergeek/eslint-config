@@ -11,6 +11,7 @@ module.exports = {
     'func-style': ['warn', 'declaration', { allowArrowFunctions: true }],
     'no-alert': 'warn',
     'no-console': 'warn',
+    'no-shadow': 'warn',
     'no-throw-literal': 'warn',
     'no-useless-computed-key': 'warn',
     'no-useless-concat': 'warn',
