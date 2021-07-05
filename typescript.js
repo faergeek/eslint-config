@@ -9,5 +9,6 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-shadow': 'warn',
     '@typescript-eslint/no-unused-vars': 'off',
+    'no-shadow': 'off',
   },
 };
