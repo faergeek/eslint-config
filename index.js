@@ -3,7 +3,7 @@ module.exports = {
   extends: ['eslint:recommended', 'prettier'],
   plugins: ['simple-import-sort'],
   parserOptions: { sourceType: 'module' },
-  env: { es2021: true },
+  env: { es2022: true },
   rules: {
     'dot-notation': 'warn',
     eqeqeq: ['warn', 'smart'],
