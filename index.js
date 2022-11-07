@@ -21,7 +21,14 @@ module.exports = {
     'prefer-const': 'warn',
     'prefer-template': 'warn',
     radix: 'warn',
-    'spaced-comment': ['warn', 'always', { block: { balanced: true } }],
+    'spaced-comment': [
+      'warn',
+      'always',
+      {
+        block: { balanced: true },
+        markers: ['/'],
+      },
+    ],
     strict: ['warn', 'never'],
     'simple-import-sort/imports': 'warn',
     'simple-import-sort/exports': 'warn',
