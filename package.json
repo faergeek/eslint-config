@@ -14,11 +14,6 @@
     "prettier": "prettier --write .",
     "prettier:check": "prettier --list-different ."
   },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
   "peerDependencies": {
     "eslint": ">= 7"
   },
