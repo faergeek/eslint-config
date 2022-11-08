@@ -9,7 +9,6 @@
     "*.js"
   ],
   "scripts": {
-    "prepare": "husky install",
     "lint": "eslint --max-warnings 0 .",
     "lint:check-prettier-conflicts": "eslint-config-prettier test.js",
     "prettier": "prettier --write .",
@@ -46,7 +45,6 @@
     "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^17.0.0",
     "eslint": "^8.0.0",
-    "husky": "^8.0.0",
     "prettier": "^2.2.1",
     "semantic-release": "^19.0.0"
   }
