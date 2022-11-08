@@ -13,8 +13,7 @@
     "lint": "eslint --max-warnings 0 .",
     "lint:check-prettier-conflicts": "eslint-config-prettier test.js",
     "prettier": "prettier --write .",
-    "prettier:check": "prettier --list-different .",
-    "release": "semantic-release"
+    "prettier:check": "prettier --list-different ."
   },
   "prettier": {
     "arrowParens": "avoid",
