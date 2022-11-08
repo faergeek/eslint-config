@@ -1,16 +1,5 @@
 {
   "extends": ["config:base"],
   "lockFileMaintenance": { "enabled": true },
-  "packageRules": [
-    {
-      "automerge": true,
-      "packagePatterns": [
-        "^@typescript-eslint/",
-        "^eslint",
-        "^prettier$",
-        "^semantic-release$"
-      ]
-    }
-  ],
   "rangeStrategy": "update-lockfile"
 }
