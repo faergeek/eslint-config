@@ -14,12 +14,6 @@
     "prettier": "prettier --write .",
     "prettier:check": "prettier --list-different ."
   },
-  "eslintConfig": {
-    "extends": [
-      ".",
-      "./node"
-    ]
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
