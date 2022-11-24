@@ -18,7 +18,7 @@ module.exports = {
     'no-useless-rename': 'warn',
     'object-shorthand': 'warn',
     'operator-assignment': 'warn',
-    'prefer-const': 'warn',
+    'prefer-const': ['warn', { destructuring: 'all' }],
     'prefer-template': 'warn',
     radix: 'warn',
     'spaced-comment': [
