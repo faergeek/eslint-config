@@ -13,6 +13,7 @@ module.exports = {
     'no-console': 'warn',
     'no-shadow': 'warn',
     'no-throw-literal': 'warn',
+    'no-unused-vars': ['warn', { ignoreRestSiblings: true }],
     'no-useless-computed-key': 'warn',
     'no-useless-concat': 'warn',
     'no-useless-rename': 'warn',
