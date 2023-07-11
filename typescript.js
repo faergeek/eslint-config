@@ -11,6 +11,7 @@ module.exports = {
       { fixStyle: 'inline-type-imports' },
     ],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-non-null-assertion': 'warn',
     '@typescript-eslint/no-shadow': 'warn',
     '@typescript-eslint/no-unused-vars': ['warn', { ignoreRestSiblings: true }],
     'no-shadow': 'off',
