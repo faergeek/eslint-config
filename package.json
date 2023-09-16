@@ -31,6 +31,6 @@
     "@commitlint/config-conventional": "^17.0.0",
     "eslint": "^8.0.0",
     "prettier": "^3.0.0",
-    "semantic-release": "^21.0.0"
+    "semantic-release": "^22.0.0"
   }
 }
