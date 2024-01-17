@@ -11,8 +11,8 @@
   "scripts": {
     "lint": "eslint --max-warnings 0 .",
     "lint:check-prettier-conflicts": "eslint-config-prettier test.js",
-    "prettier": "prettier --write .",
-    "prettier:check": "prettier --list-different ."
+    "format": "prettier --write .",
+    "format:check": "prettier --list-different ."
   },
   "peerDependencies": {
     "eslint": ">= 7"
