@@ -7,6 +7,5 @@ updates:
       interval: 'daily'
   - package-ecosystem: 'github-actions'
     directory: '/'
-    versioning-strategy: increase-if-necessary
     schedule:
       interval: 'daily'
