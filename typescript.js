@@ -6,10 +6,7 @@ module.exports = {
       'warn',
       { 'ts-ignore': 'allow-with-description' },
     ],
-    '@typescript-eslint/consistent-type-imports': [
-      'warn',
-      { fixStyle: 'inline-type-imports' },
-    ],
+    '@typescript-eslint/consistent-type-imports': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-non-null-assertion': 'warn',
     '@typescript-eslint/no-shadow': 'warn',
