@@ -1,16 +1,19 @@
 {
+  "type": "module",
   "name": "@faergeek/eslint-config",
   "version": "0.0.0-semantically-released",
   "main": "index.js",
   "repository": "git@github.com:faergeek/eslint-config.git",
   "author": "Sergey Slipchenko <faergeek@gmail.com>",
   "license": "MIT",
+  "exports": {
+    ".": "./index.js"
+  },
   "files": [
     "*.js"
   ],
   "scripts": {
-    "lint": "eslint --max-warnings 0 .",
-    "lint:check-prettier-conflicts": "eslint-config-prettier test.js",
+    "lint": "eslint --max-warnings 0",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
@@ -19,12 +22,11 @@
   },
   "packageManager": "pnpm@9.1.0",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.0.1",
-    "@typescript-eslint/parser": "^7.0.1",
-    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-simple-import-sort": "^12.0.0"
+    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "globals": "^15.0.0",
+    "typescript-eslint": "^7.5.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.0.0",
