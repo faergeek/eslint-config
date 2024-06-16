@@ -1,5 +1,10 @@
 module.exports = {
   extends: 'plugin:vitest/legacy-recommended',
+  settings: {
+    vitest: {
+      typecheck: true,
+    },
+  },
   rules: {
     'vitest/consistent-test-it': ['warn', { fn: 'test', withinDescribe: 'it' }],
     'vitest/no-disabled-tests': 'warn',
