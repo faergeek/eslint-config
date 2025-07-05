@@ -1,7 +1,7 @@
 import eslint from '@eslint/js';
 import vitestPlugin from '@vitest/eslint-plugin';
 import { defineConfig } from 'eslint/config';
-import reactPluginConfigRecommended from 'eslint-plugin-react/configs/recommended.js';
+import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
@@ -60,7 +60,10 @@ export const node = defineConfig({
 });
 
 export const react = defineConfig({
-  extends: [reactPluginConfigRecommended],
+  extends: [
+    reactPlugin.configs.flat.recommended,
+    reactPlugin.configs.flat['jsx-runtime'],
+  ],
   languageOptions: {
     globals: globals['shared-node-browser'],
   },
@@ -81,11 +84,9 @@ export const react = defineConfig({
       'error',
       { allowReferrer: true, warnOnSpreadAttributes: true },
     ],
-    'react/jsx-uses-react': 'off',
     'react/no-danger': 'warn',
     'react/no-unused-prop-types': 'warn',
     'react/prop-types': 'off',
-    'react/react-in-jsx-scope': 'off',
     'react/require-render-return': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
