@@ -1,4 +1,4 @@
-import eslint from '@eslint/js';
+import js from '@eslint/js';
 import vitestPlugin from '@vitest/eslint-plugin';
 import { defineConfig } from 'eslint/config';
 import reactPlugin from 'eslint-plugin-react';
@@ -8,7 +8,7 @@ import globals from 'globals';
 import typescriptEslint from 'typescript-eslint';
 
 export const base = defineConfig({
-  extends: [eslint.configs.recommended],
+  extends: [js.configs.recommended],
   linterOptions: {
     reportUnusedDisableDirectives: true,
   },
