@@ -70,7 +70,6 @@ export const react = defineConfig({
   },
   settings: { react: { version: 'detect' } },
   rules: {
-    'react/display-name': 'off',
     'react/jsx-boolean-value': 'warn',
     'react/jsx-curly-brace-presence': 'warn',
     'react/jsx-fragments': 'warn',
