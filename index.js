@@ -83,7 +83,6 @@ export const react = defineConfig({
     ],
     'react/no-danger': 'warn',
     'react/no-unused-prop-types': 'warn',
-    'react/require-render-return': 'off',
   },
 });
 
