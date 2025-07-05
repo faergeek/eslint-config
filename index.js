@@ -63,12 +63,10 @@ export const react = defineConfig({
   extends: [
     reactPlugin.configs.flat.recommended,
     reactPlugin.configs.flat['jsx-runtime'],
+    reactHooksPlugin.configs['recommended-latest'],
   ],
   languageOptions: {
     globals: globals['shared-node-browser'],
-  },
-  plugins: {
-    'react-hooks': reactHooksPlugin,
   },
   settings: { react: { version: 'detect' } },
   rules: {
@@ -88,8 +86,6 @@ export const react = defineConfig({
     'react/no-unused-prop-types': 'warn',
     'react/prop-types': 'off',
     'react/require-render-return': 'off',
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
   },
 });
 
