@@ -90,10 +90,6 @@ export const typescript = defineConfig({
   extends: [typescriptEslint.configs.recommended],
   rules: {
     '@typescript-eslint/array-type': ['warn', { default: 'array-simple' }],
-    '@typescript-eslint/ban-ts-comment': [
-      'warn',
-      { 'ts-ignore': 'allow-with-description' },
-    ],
     '@typescript-eslint/consistent-type-imports': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-non-null-assertion': 'warn',
