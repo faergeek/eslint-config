@@ -2,7 +2,6 @@
   "type": "module",
   "name": "@faergeek/eslint-config",
   "version": "0.0.0-semantically-released",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/faergeek/eslint-config.git"
