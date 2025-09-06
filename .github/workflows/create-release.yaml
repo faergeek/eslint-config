@@ -17,3 +17,4 @@ jobs:
       - uses: softprops/action-gh-release@v2
         with:
           body_path: ${{ steps.git-cliff.outputs.changelog }}
+          token: ${{ secrets.GH_PAT }}
