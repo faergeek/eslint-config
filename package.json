@@ -6,9 +6,7 @@
   "repository": "git@github.com:faergeek/eslint-config.git",
   "author": "Sergei Slipchenko <faergeek@gmail.com>",
   "license": "MIT",
-  "exports": {
-    ".": "./index.js"
-  },
+  "exports": "./index.js",
   "files": [
     "CHANGELOG.md",
     "index.js"
