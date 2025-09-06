@@ -1,8 +1,8 @@
-name: release
+name: cd
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - master
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
 jobs:
@@ -19,12 +19,10 @@ jobs:
         with:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - name: generate release notes
-        id: release-notes
+      - name: Release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          echo "content<<EOF" >>$GITHUB_OUTPUT
-          pnpm exec git-cliff --latest --strip all >>$GITHUB_OUTPUT
-          echo "EOF" >>$GITHUB_OUTPUT
-      - uses: svenstaro/upload-release-action@v2
-        with:
-          body: ${{ steps.release-notes.outputs.content }}
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          pnpm run release

@@ -1,29 +1,31 @@
 {
   "type": "module",
   "name": "@faergeek/eslint-config",
-  "version": "0.0.0-semantically-released",
-  "main": "index.js",
-  "repository": "git@github.com:faergeek/eslint-config.git",
+  "version": "7.0.66",
+  "exports": "./index.js",
+  "files": [
+    "CHANGELOG.md",
+    "index.js"
+  ],
   "author": "Sergei Slipchenko <faergeek@gmail.com>",
   "license": "MIT",
-  "exports": {
-    ".": "./index.js"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/faergeek/eslint-config.git"
   },
-  "files": [
-    "*.js"
-  ],
   "scripts": {
     "lint": "eslint --max-warnings 0",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "release": "npm version $(git-cliff --bumped-version)",
+    "generate-changelog": "git-cliff -o CHANGELOG.md && prettier --write CHANGELOG.md",
+    "version": "pnpm run generate-changelog && git add CHANGELOG.md",
+    "postversion": "pnpm publish",
+    "prepublishOnly": "git push origin && git push origin --tags"
   },
   "packageManager": "pnpm@10.15.1",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
-  },
   "dependencies": {
+    "@eslint/js": "^9.19.0",
     "@vitest/eslint-plugin": "^1.0.1",
     "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^5.0.0",
@@ -37,9 +39,8 @@
   "devDependencies": {
     "@commitlint/cli": "^19.0.0",
     "@commitlint/config-conventional": "^19.0.0",
-    "@eslint/js": "^9.19.0",
     "eslint": "^9.0.0",
-    "prettier": "^3.0.0",
-    "semantic-release": "^24.0.0"
+    "git-cliff": "^2.10.0",
+    "prettier": "^3.0.0"
   }
 }
