@@ -18,11 +18,6 @@
     "generate-changelog": "git-cliff -o CHANGELOG.md && prettier --write CHANGELOG.md"
   },
   "packageManager": "pnpm@10.15.1",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
-  },
   "dependencies": {
     "@vitest/eslint-plugin": "^1.0.1",
     "eslint-plugin-react": "^7.23.2",
