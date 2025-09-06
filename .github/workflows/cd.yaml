@@ -5,24 +5,22 @@ on:
       - master
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
-  release:
+  cd:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0
-          ref: ${{ github.head_ref }}
-      - uses: asdf-vm/actions/install@v4
-      - uses: pnpm/action-setup@v4
-      - uses: actions/setup-node@v5
+      - id: git-cliff
+        uses: orhun/git-cliff-action@v4
         with:
-          cache: pnpm
-      - run: pnpm install --frozen-lockfile
-      - name: Release
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          args: --bump
+      - name: bump version
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          pnpm run --silent release || true
+          if git tag "${{ steps.git-cliff.outputs.version }}" 2>/dev/null; then
+            git push origin --tags
+          else
+            echo "No relevant changes to publish"
+          fi
