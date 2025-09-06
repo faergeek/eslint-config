@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## Unreleased
+
+### Features
+
+- Generate `CHANGELOG.md` using `git-cliff`
+
+### Fixes
+
+- Move `@eslint/js` to `dependencies`
+
 ## 7.0.66 (2025-09-04)
 
 ### Fixes
