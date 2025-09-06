@@ -13,13 +13,12 @@ jobs:
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0
+          token: ${{ secrets.GH_PAT }}
       - id: git-cliff
         uses: orhun/git-cliff-action@v4
         with:
           args: --bump
       - name: bump version
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           if git tag "${{ steps.git-cliff.outputs.version }}" 2>/dev/null; then
             git push origin --tags
