@@ -10,12 +10,14 @@
     ".": "./index.js"
   },
   "files": [
+    "CHANGELOG.md",
     "*.js"
   ],
   "scripts": {
     "lint": "eslint --max-warnings 0",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "generate-changelog": "git-cliff -o CHANGELOG.md && prettier --write CHANGELOG.md"
   },
   "packageManager": "pnpm@10.15.1",
   "pnpm": {
@@ -39,6 +41,7 @@
     "@commitlint/config-conventional": "^19.0.0",
     "@eslint/js": "^9.19.0",
     "eslint": "^9.0.0",
+    "git-cliff": "^2.10.0",
     "prettier": "^3.0.0",
     "semantic-release": "^24.0.0"
   }
