@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@faergeek/eslint-config",
-  "version": "0.0.0-semantically-released",
+  "version": "7.0.66",
   "exports": "./index.js",
   "files": [
     "CHANGELOG.md",
@@ -17,7 +17,11 @@
     "lint": "eslint --max-warnings 0",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "generate-changelog": "git-cliff -o CHANGELOG.md && prettier --write CHANGELOG.md"
+    "release": "npm version $(git-cliff --bumped-version)",
+    "generate-changelog": "git-cliff -o CHANGELOG.md && prettier --write CHANGELOG.md",
+    "version": "pnpm run generate-changelog && git add CHANGELOG.md",
+    "postversion": "pnpm publish",
+    "prepublishOnly": "git push origin && git push origin --tags"
   },
   "packageManager": "pnpm@10.15.1",
   "dependencies": {
@@ -37,7 +41,6 @@
     "@commitlint/config-conventional": "^19.0.0",
     "eslint": "^9.0.0",
     "git-cliff": "^2.10.0",
-    "prettier": "^3.0.0",
-    "semantic-release": "^24.0.0"
+    "prettier": "^3.0.0"
   }
 }
