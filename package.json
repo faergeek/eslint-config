@@ -3,7 +3,10 @@
   "name": "@faergeek/eslint-config",
   "version": "0.0.0-semantically-released",
   "main": "index.js",
-  "repository": "git@github.com:faergeek/eslint-config.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/faergeek/eslint-config.git"
+  },
   "author": "Sergei Slipchenko <faergeek@gmail.com>",
   "license": "MIT",
   "exports": "./index.js",
