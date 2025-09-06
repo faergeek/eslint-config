@@ -11,7 +11,7 @@
   },
   "files": [
     "CHANGELOG.md",
-    "*.js"
+    "index.js"
   ],
   "scripts": {
     "lint": "eslint --max-warnings 0",
