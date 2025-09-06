@@ -17,7 +17,7 @@
     "lint": "eslint --max-warnings 0",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "release": "npm version $(git-cliff --bumped-version)",
+    "release": "pnpm version $(git-cliff --bumped-version)",
     "generate-changelog": "git-cliff -o CHANGELOG.md && prettier --write CHANGELOG.md",
     "version": "pnpm run generate-changelog && git add CHANGELOG.md",
     "postversion": "pnpm publish",
