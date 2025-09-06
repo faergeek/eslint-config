@@ -1,8 +1,8 @@
-name: release
+name: release-notes
 on:
   push:
     tags:
-      - '*'
+      - v[0-9]+\.[0-9]+\.[0-9]+
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
 jobs:
@@ -25,6 +25,6 @@ jobs:
           echo "content<<EOF" >>$GITHUB_OUTPUT
           pnpm exec git-cliff --latest --strip all >>$GITHUB_OUTPUT
           echo "EOF" >>$GITHUB_OUTPUT
-      - uses: svenstaro/upload-release-action@v2
+      - uses: softprops/action-gh-release@v2
         with:
           body: ${{ steps.release-notes.outputs.content }}
