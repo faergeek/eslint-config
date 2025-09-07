@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## 8.0.0 (2025-09-07)
+
+### BREAKING CHANGES
+
+- `@faergeek/eslint-config` now only exports what
+  previously was the `base` export as it's `default` export. For other
+  exports a `@faergeek/eslint-config-<export>` package needs to be
+  installed.
+
+### Features
+
+- split into multiple packages
+
 ## 7.1.6 (2025-09-07)
 
 ### Fixes
