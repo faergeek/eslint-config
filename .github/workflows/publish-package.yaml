@@ -6,9 +6,11 @@ on:
 permissions:
   contents: read
 jobs:
-  publish-package:
+  npm-publish:
     runs-on: ubuntu-latest
-    environment: npm
+    environment:
+      name: npm
+      url: https://www.npmjs.com/package/@faergeek/eslint-config
     permissions:
       contents: read
       id-token: write
