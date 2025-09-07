@@ -1,7 +1,5 @@
 # @faergeek/eslint-config
 
-[![npm](https://nodei.co/npm/@faergeek/eslint-config.svg?style=compact)](https://www.npmjs.com/package/@faergeek/eslint-config)
-
 ## Install
 
 ```sh
