@@ -3,6 +3,8 @@ on:
   push:
     tags:
       - v*
+permissions:
+  contents: read
 jobs:
   create-release:
     runs-on: ubuntu-latest
