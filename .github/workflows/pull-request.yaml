@@ -3,6 +3,8 @@ on:
   - pull_request
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
+permissions:
+  contents: read
 jobs:
   bump-version:
     runs-on: ubuntu-latest

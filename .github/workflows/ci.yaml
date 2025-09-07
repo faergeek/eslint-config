@@ -5,6 +5,8 @@ on:
       - '**'
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
+permissions:
+  contents: read
 jobs:
   ci:
     runs-on: ubuntu-latest
