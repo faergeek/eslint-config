@@ -1,7 +1,8 @@
 [changelog]
 header = """
-# Changelog\n
-All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.\n
+# Changelog
+
+All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 """
 
 body = """
@@ -10,19 +11,18 @@ body = """
 {% else -%}
 ## Unreleased
 {% endif -%}
-{% for group, commits in commits | group_by(attribute="group") %}
-### {{ group | striptags | trim | upper_first }}
-
-{% for commit in commits -%}
-- {{ commit.message | upper_first }}
-{% endfor %}
-{%- endfor -%}
 {%- if commits | filter(attribute="breaking", value=true) | length != 0 %}
 ### BREAKING CHANGES
 {% for commit in commits | filter(attribute="breaking", value=true) %}
 - {{ commit.breaking_description }}
 {% endfor %}
 {%- endif -%}
+{% for group, commits in commits | group_by(attribute="group") %}
+### {{ group }}
+{% for commit in commits -%}
+- {{ commit.message }}
+{% endfor %}
+{%- endfor -%}
 """
 
 [git]
