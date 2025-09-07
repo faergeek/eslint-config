@@ -10,12 +10,10 @@ npm i -D @faergeek/eslint-config
 
 ```javascript
 import { base, react, typescript, vitest } from '@faergeek/eslint-config';
-import { defineConfig } from 'eslint/config';
+import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
-  base,
-  react,
-  typescript,
-  { files: ['**/*.spec.*'], extends: [vitest] },
+  globalIgnores(['dist']),
+  { extends: [base, react, typescript, vitest] },
 ]);
 ```
