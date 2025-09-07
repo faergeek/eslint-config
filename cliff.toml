@@ -31,7 +31,6 @@ commit_parsers = [
   { message = "^feat", group = "Features" },
   { message = "^fix", group = "Fixes" },
   { message = "^perf", group = "Performance Improvements" },
-  { message = "^revert", group = "Revert" },
 ]
 conventional_commits = true
 filter_commits = true
