@@ -23,11 +23,12 @@ jobs:
       - run: pnpm exec commitlint --verbose --from="remotes/origin/$GITHUB_BASE_REF"
       - name: commit
         run: |
-          version=$(pnpm exec git-cliff --bumped-version)
-
           git config user.name 'github-actions[bot]'
           git config user.email 'github-actions[bot]@users.noreply.github.com'
 
-          if pnpm version -m "chore: $version" "$version"; then
-            git push origin
+          pnpm run generate-changelog
+
+          version=$(pnpm exec git-cliff --bumped-version)
+          if pnpm -r run set-version --no-git-tag-version "$version"; then
+            git add . && git commit -m "chore: $version" && git push origin
           fi

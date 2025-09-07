@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "name": "@faergeek/eslint-config-react",
+  "version": "7.1.6",
+  "exports": "./index.js",
+  "files": [
+    "index.js"
+  ],
+  "author": "Sergei Slipchenko <faergeek@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/faergeek/eslint-config/tree/main/workspace/eslint-config-react",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/faergeek/eslint-config.git"
+  },
+  "scripts": {
+    "set-version": "npm version"
+  },
+  "dependencies": {
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^5.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  }
+}

@@ -1,24 +1,23 @@
-# @faergeek/eslint-config
+# opinionated configs for eslint
 
-[![npm](https://nodei.co/npm/@faergeek/eslint-config.svg?style=compact)](https://www.npmjs.com/package/@faergeek/eslint-config)
-
-## Install
+## Install all
 
 ```sh
-npm i -D @faergeek/eslint-config
+npm i -D @faergeek/eslint-config @faergeek/eslint-config-react @faergeek/eslint-config-typescript @faergeek/eslint-config-vitest
 ```
 
-## Use
+## Use all
 
 ```javascript
-import { base, node, react, typescript, vitest } from '@faergeek/eslint-config';
+import base from '@faergeek/eslint-config';
+import react from '@faergeek/eslint-config-react';
+import typescript from '@faergeek/eslint-config-typescript';
+import vitest from '@faergeek/eslint-config-vitest';
 import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
-  base,
-  react,
-  typescript,
-  { files: ['*.js'], extends: [node] },
+  globalIgnores(['dist']),
+  { extends: [base, react, typescript] },
   { files: ['**/*.spec.*'], extends: [vitest] },
 ]);
 ```

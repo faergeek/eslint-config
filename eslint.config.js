@@ -1,1 +1,1 @@
-export { base as default } from './index.js';
+export { default } from '@faergeek/eslint-config';

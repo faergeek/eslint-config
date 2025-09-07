@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "name": "@faergeek/eslint-config-vitest",
+  "version": "7.1.6",
+  "exports": "./index.js",
+  "files": [
+    "index.js"
+  ],
+  "author": "Sergei Slipchenko <faergeek@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/faergeek/eslint-config/tree/main/workspace/eslint-config-vitest",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/faergeek/eslint-config.git"
+  },
+  "scripts": {
+    "set-version": "npm version"
+  },
+  "dependencies": {
+    "@vitest/eslint-plugin": "^1.0.1"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  }
+}

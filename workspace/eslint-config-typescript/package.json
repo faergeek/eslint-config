@@ -1,0 +1,25 @@
+{
+  "type": "module",
+  "name": "@faergeek/eslint-config-typescript",
+  "version": "7.1.6",
+  "exports": "./index.js",
+  "files": [
+    "index.js"
+  ],
+  "author": "Sergei Slipchenko <faergeek@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/faergeek/eslint-config/tree/main/workspace/eslint-config-typescript",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/faergeek/eslint-config.git"
+  },
+  "scripts": {
+    "set-version": "npm version"
+  },
+  "dependencies": {
+    "typescript-eslint": "^8.0.0"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  }
+}
