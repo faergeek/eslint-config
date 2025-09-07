@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## 8.0.1 (2025-09-07)
+
+### Documentation
+
+- remove `node` usage from README.md
+- simplify usage example in README.md
+
 ## 8.0.0 (2025-09-07)
 
 ### BREAKING CHANGES
