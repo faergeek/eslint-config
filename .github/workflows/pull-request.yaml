@@ -8,6 +8,7 @@ permissions:
 jobs:
   bump-version:
     runs-on: ubuntu-latest
+    environment: github
     steps:
       - uses: actions/checkout@v5
         with:
