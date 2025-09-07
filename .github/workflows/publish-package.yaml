@@ -6,7 +6,7 @@ on:
 permissions:
   contents: read
 jobs:
-  publish-package:
+  npm-publish:
     runs-on: ubuntu-latest
     environment:
       name: npm
