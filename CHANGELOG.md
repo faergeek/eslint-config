@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## 7.1.4 (2025-09-07)
+
+### Fixes
+
+- Use environment for publishing
+
 ## 7.1.3 (2025-09-07)
 
 ### Fixes
