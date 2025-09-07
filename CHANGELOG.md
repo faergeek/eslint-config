@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## 7.1.6 (2025-09-07)
+
+### Fixes
+
+- remove CHANGELOG.md from a package
+
 ## 7.1.5 (2025-09-07)
 
 ### Fixes
