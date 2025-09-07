@@ -4,7 +4,6 @@ import { defineConfig } from 'eslint/config';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort';
-import globals from 'globals';
 import typescriptEslint from 'typescript-eslint';
 
 export const base = defineConfig({
@@ -47,27 +46,12 @@ export const base = defineConfig({
   },
 });
 
-export const browser = defineConfig({
-  languageOptions: {
-    globals: globals.browser,
-  },
-});
-
-export const node = defineConfig({
-  languageOptions: {
-    globals: globals.nodeBuiltin,
-  },
-});
-
 export const react = defineConfig({
   extends: [
     reactPlugin.configs.flat.recommended,
     reactPlugin.configs.flat['jsx-runtime'],
     reactHooksPlugin.configs['recommended-latest'],
   ],
-  languageOptions: {
-    globals: globals['shared-node-browser'],
-  },
   settings: { react: { version: 'detect' } },
   rules: {
     'react/jsx-boolean-value': 'warn',
