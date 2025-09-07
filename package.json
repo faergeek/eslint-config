@@ -1,9 +1,10 @@
 {
   "type": "module",
   "name": "@faergeek/eslint-config",
-  "version": "7.1.1",
+  "version": "7.1.2",
   "exports": "./index.js",
   "files": [
+    "./CHANGELOG.md",
     "index.js"
   ],
   "author": "Sergei Slipchenko <faergeek@gmail.com>",
