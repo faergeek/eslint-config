@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## 8.0.0 (2025-09-07)
+
+### BREAKING CHANGES
+
+- there is no `browser` and `node` configs anymore.
+- `react` config doesn't set `languageOptions.globals` to
+  `globals['shared-node-browser']`.
+
+### Performance Improvements
+
+- remove `globals` package from dependencies
+
 ## 7.1.6 (2025-09-07)
 
 ### Fixes

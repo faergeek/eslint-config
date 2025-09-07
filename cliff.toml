@@ -14,8 +14,10 @@ body = """
 {%- if commits | filter(attribute="breaking", value=true) | length != 0 %}
 ### BREAKING CHANGES
 {% for commit in commits | filter(attribute="breaking", value=true) %}
-- {{ commit.breaking_description }}
-{% endfor %}
+{% for footer in commit.footers | filter(attribute="breaking", value=true) %}
+- {{ footer.value }}
+{%- endfor -%}
+{%- endfor -%}
 {%- endif -%}
 {% for group, commits in commits | group_by(attribute="group") %}
 ### {{ group }}
@@ -31,7 +33,6 @@ commit_parsers = [
   { message = "^feat", group = "Features" },
   { message = "^fix", group = "Fixes" },
   { message = "^perf", group = "Performance Improvements" },
-  { message = "^revert", group = "Revert" },
 ]
 conventional_commits = true
 filter_commits = true
