@@ -15,13 +15,9 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ secrets.GH_PAT }}
-      - id: git-cliff
-        uses: orhun/git-cliff-action@v4
-        with:
-          args: --bump
       - name: push tag
         run: |
-          if git tag "${{ steps.git-cliff.outputs.version }}" 2>/dev/null; then
+          if git tag "v$(jq -r '.version' package.json)" 2>/dev/null; then
             git push origin --tags
           else
             echo "No relevant changes to publish"

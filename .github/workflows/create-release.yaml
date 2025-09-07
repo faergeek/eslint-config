@@ -10,11 +10,14 @@ jobs:
       - uses: actions/checkout@v5
         with:
           fetch-depth: 0
-      - id: git-cliff
-        uses: orhun/git-cliff-action@v4
+      - uses: asdf-vm/actions/install@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
         with:
-          args: --current --strip all
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec git-cliff --current --strip all -o /tmp/release-notes.md
       - uses: softprops/action-gh-release@v2
         with:
-          body_path: ${{ steps.git-cliff.outputs.changelog }}
+          body_path: /tmp/release-notes.md
           token: ${{ secrets.GH_PAT }}
