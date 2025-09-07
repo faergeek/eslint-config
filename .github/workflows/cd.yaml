@@ -2,12 +2,13 @@ name: cd
 on:
   push:
     branches:
-      - master
+      - '**'
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 jobs:
-  cd:
+  latest:
+    if: github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
@@ -18,7 +19,7 @@ jobs:
         uses: orhun/git-cliff-action@v4
         with:
           args: --bump
-      - name: bump version
+      - name: push tag
         run: |
           if git tag "${{ steps.git-cliff.outputs.version }}" 2>/dev/null; then
             git push origin --tags
