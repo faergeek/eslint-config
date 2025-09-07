@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## 7.1.5 (2025-09-07)
+
+### Fixes
+
+- Add a basic README.md
+
 ## 7.1.4 (2025-09-07)
 
 ### Fixes
