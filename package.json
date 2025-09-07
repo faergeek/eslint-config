@@ -4,6 +4,7 @@
   "version": "7.1.1",
   "exports": "./index.js",
   "files": [
+    "./CHANGELOG.md",
     "index.js"
   ],
   "author": "Sergei Slipchenko <faergeek@gmail.com>",
