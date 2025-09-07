@@ -6,7 +6,7 @@ on:
 jobs:
   publish-package:
     runs-on: ubuntu-latest
-    environment: publish-package
+    environment: npm
     permissions:
       contents: read
       id-token: write
