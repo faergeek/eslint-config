@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
-## 8.0.2 (2025-09-08)
+## 8.1.0 (2025-09-10)
+
+### Features
+
+- enable `no-duplicate-imports` rule
+
+## 8.0.2 (2025-09-09)
 
 ### Fixes
 
