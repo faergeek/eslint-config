@@ -21,6 +21,13 @@ export const base = defineConfig({
     'func-style': ['warn', 'declaration', { allowArrowFunctions: true }],
     'no-alert': 'warn',
     'no-console': 'warn',
+    'no-duplicate-imports': [
+      'warn',
+      {
+        allowSeparateTypeImports: true,
+        includeExports: true,
+      },
+    ],
     'no-shadow': 'warn',
     'no-throw-literal': 'warn',
     'no-unused-vars': ['warn', { ignoreRestSiblings: true }],
