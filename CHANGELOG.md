@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## 8.1.2 (2025-09-16)
+
+### Fixes
+
+- update dependency @vitest/eslint-plugin to v1.3.10
+
 ## 8.1.1 (2025-09-16)
 
 ### Fixes
