@@ -61,6 +61,7 @@ export const react = defineConfig({
   ],
   settings: { react: { version: 'detect' } },
   rules: {
+    'react/function-component-definition': 'warn',
     'react/jsx-boolean-value': 'warn',
     'react/jsx-curly-brace-presence': 'warn',
     'react/jsx-fragments': 'warn',
