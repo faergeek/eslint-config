@@ -32,6 +32,9 @@ jobs:
         with:
           fetch-depth: 0
           token: ${{ steps.app-token.outputs.token }}
+      - uses: asdf-vm/actions/install@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v5
       - name: bump version
         run: |
           version=$(pnpm exec git-cliff --bumped-version)
