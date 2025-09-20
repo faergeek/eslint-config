@@ -15,9 +15,7 @@
   "scripts": {
     "lint": "eslint --max-warnings 0",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "generate-changelog": "git-cliff --bump -o CHANGELOG.md && prettier --write CHANGELOG.md",
-    "version": "pnpm run generate-changelog && git add CHANGELOG.md"
+    "format:check": "prettier --check ."
   },
   "packageManager": "pnpm@10.17.0",
   "dependencies": {
