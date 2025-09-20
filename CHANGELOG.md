@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## Unreleased
+
+### Fixes
+
+- change `@eslint/js` to be a peer dependency
+
 ## 8.1.3 (2025-09-17)
 
 ### Fixes
