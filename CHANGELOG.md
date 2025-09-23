@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## Unreleased
+
+### Fixes
+
+- update dependency typescript-eslint to v8.44.1
+
 ## 8.1.5 (2025-09-20)
 
 ### Fixes
