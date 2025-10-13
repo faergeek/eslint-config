@@ -57,7 +57,7 @@ export const react = defineConfig({
   extends: [
     reactPlugin.configs.flat.recommended,
     reactPlugin.configs.flat['jsx-runtime'],
-    reactHooksPlugin.configs['recommended-latest'],
+    reactHooksPlugin.configs.flat.recommended,
   ],
   settings: { react: { version: 'detect' } },
   rules: {
