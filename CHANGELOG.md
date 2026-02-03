@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## Unreleased
+
+### Features
+
+- publish types
+
 ## 8.1.7 (2025-10-13)
 
 ### Fixes
