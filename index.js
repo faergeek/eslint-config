@@ -87,6 +87,7 @@ export const typescript = defineConfig({
     '@typescript-eslint/no-shadow': 'warn',
     '@typescript-eslint/no-unused-vars': 'off',
     'no-shadow': 'off',
+    'no-undef': 'off',
   },
 });
 
