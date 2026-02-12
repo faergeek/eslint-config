@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## Unreleased
+
+### Fixes
+
+- disable core `no-undef` rule in `typescript` config
+
 ## 8.2.0 (2026-02-03)
 
 ### Features
