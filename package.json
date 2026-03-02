@@ -7,7 +7,7 @@
     "default": "./index.js"
   },
   "files": [
-    "./dist/index.d.ts",
+    "dist",
     "index.js"
   ],
   "author": "Sergei Slipchenko <faergeek@gmail.com>",
