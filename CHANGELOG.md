@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
+## Unreleased
+
+### Fixes
+
+- update dependency eslint-plugin-simple-import-sort to v13
+
 ## 8.2.2 (2026-03-02)
 
 ### Fixes
