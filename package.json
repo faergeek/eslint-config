@@ -36,8 +36,8 @@
     "eslint": "^9.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.0.0",
-    "@commitlint/config-conventional": "^20.0.0",
+    "@commitlint/cli": "^21.0.0",
+    "@commitlint/config-conventional": "^21.0.0",
     "@eslint/js": "^10.0.0",
     "eslint": "^10.0.0",
     "git-cliff": "^2.10.0",
