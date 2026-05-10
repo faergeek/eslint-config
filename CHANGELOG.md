@@ -1,6 +1,8 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
+All notable changes to this project will be documented in this file. See
+[conventional commits](https://www.conventionalcommits.org/) for commit
+guidelines.
 
 ## 8.2.3 (2026-04-07)
 
@@ -1138,8 +1140,7 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### BREAKING CHANGES
 
-- typescript-eslint bumps node and eslint minimum version
-  requirements
+- typescript-eslint bumps node and eslint minimum version requirements
 
 ### Fixes
 
@@ -2673,10 +2674,9 @@ All notable changes to this project will be documented in this file. See [conven
 
 ### BREAKING CHANGES
 
-- if you use react or preact config, to preserve old
-  behavior you need to add -classic suffix to config name, e.g.
-  `@faergeek/eslint-config/react-classic` and
-  `@faergeek/eslint-config/preact-classic` respectively
+- if you use react or preact config, to preserve old behavior you need to add
+  -classic suffix to config name, e.g. `@faergeek/eslint-config/react-classic`
+  and `@faergeek/eslint-config/preact-classic` respectively
 
 ### Features
 
