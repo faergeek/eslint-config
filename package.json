@@ -23,7 +23,7 @@
     "format:check": "prettier --check .",
     "build": "tsc"
   },
-  "packageManager": "pnpm@11.11.0",
+  "packageManager": "pnpm@11.13.1",
   "dependencies": {
     "@vitest/eslint-plugin": "^1.0.1",
     "eslint-plugin-react": "^7.23.2",
