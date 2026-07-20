@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file. See
 [conventional commits](https://www.conventionalcommits.org/) for commit
 guidelines.
 
-## Unreleased
+## 8.2.4 (2026-07-20)
 
 ### Fixes
 
