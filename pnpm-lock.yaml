@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@vitest/eslint-plugin':
         specifier: ^1.0.1
-        version: 1.6.25(@typescript-eslint/eslint-plugin@8.65.0(@typescript-eslint/parser@8.65.0(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3)
+        version: 1.6.26(@typescript-eslint/eslint-plugin@8.65.0(@typescript-eslint/parser@8.65.0(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3)
       eslint-plugin-react:
         specifier: ^7.23.2
         version: 7.37.5(eslint@10.8.0(jiti@2.6.1))
@@ -376,8 +376,8 @@ packages:
     resolution: {integrity: sha512-8C71BQkGjiMmXtop7pHVJu1l2NNShFdkCyD6a2ezzs5vU/L3LRtb69EtcteFwz0mYMPzIgOw0n6OV4VBUWZd7A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@vitest/eslint-plugin@1.6.25':
-    resolution: {integrity: sha512-ylqFL2TYRgtTewl5Kr2NCL3fnLOMNo91XEyniB4tA1zlnZs0GbrNj6ER6ldR9J3r5RSL0dQ7EeMUiXsbfHrvpg==}
+  '@vitest/eslint-plugin@1.6.26':
+    resolution: {integrity: sha512-2eawZk4MZvkEtMZFdScmCE0R1Rti85uRZpmbe9eAv5Q3blDZ5OxlrC9IHlSnxhDCqOO2xKNaD3oufl9BUlI0yA==}
     engines: {node: '>=18'}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': '*'
@@ -1901,7 +1901,7 @@ snapshots:
       '@typescript-eslint/types': 8.65.0
       eslint-visitor-keys: 5.0.1
 
-  '@vitest/eslint-plugin@1.6.25(@typescript-eslint/eslint-plugin@8.65.0(@typescript-eslint/parser@8.65.0(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3)':
+  '@vitest/eslint-plugin@1.6.26(@typescript-eslint/eslint-plugin@8.65.0(@typescript-eslint/parser@8.65.0(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3))(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.65.0
       '@typescript-eslint/utils': 8.65.0(eslint@10.8.0(jiti@2.6.1))(typescript@6.0.3)
